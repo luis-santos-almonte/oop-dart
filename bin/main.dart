@@ -2,19 +2,19 @@ import "../lib/employee.dart";
 import "../lib/person.dart";
 
 void personMethod() {
-  String name = "Luis";
+  String name = 'Luis';
   int age = 22;
-  var newPerson = new Person(name, age);
+  Person newPerson = Person(name, age);
 
   newPerson.describe();
 
-  print(newPerson.getname);
+  print(newPerson.name);
 }
 
 void employeeMethod() {
-  String name = "Marcos";
+  String name = 'Marcos';
   int age = 35;
-  String job = "Software Engineer";
+  String job = 'Software Engineer';
   employee newEmployee = employee(name, age, job);
 
   newEmployee.describe();

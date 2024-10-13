@@ -1,11 +1,11 @@
 class Person {
-  final String name;
-  final int age;
+  final String _name;
+  final int _age;
 
-  const Person(this.name, this.age);
+  const Person(this._name, this._age);
 
-  String get getname => name;
-  int get getage => age;
+  String get name => _name;
+  int get age => _age;
 
   void describe() {
     print('This is $name, he/she is $age years old.');
