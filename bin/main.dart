@@ -1,6 +1,8 @@
 import "../lib/employee.dart";
 import "../lib/person.dart";
 
+enum weekDays { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
+
 void personMethod() {
   String name = 'Luis';
   int age = 22;
