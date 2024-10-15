@@ -15,7 +15,7 @@ void employeeMethod() {
   String name = 'Marcos';
   int age = 35;
   String job = 'Software Engineer';
-  employee newEmployee = employee(name, age, job);
+  Employee newEmployee = Employee(name, age, job);
 
   newEmployee.describe();
 }
