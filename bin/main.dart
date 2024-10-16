@@ -1,4 +1,5 @@
 import 'dart:io';
+import "../lib/animal.dart";
 import "../lib/employee.dart";
 import "../lib/person.dart";
 
@@ -25,6 +26,15 @@ void employeeMethod() {
   Employee newEmployee = Employee(name, age, job);
 
   newEmployee.describe();
+}
+
+void dolphinMethod() {
+  String type = 'Orca';
+  double size = 15.5;
+  Dolphin newDolphin = Dolphin(size, type);
+
+  newDolphin.eat();
+  newDolphin.swim();
 }
 
 void main() {
@@ -55,6 +65,6 @@ void main() {
   if (number.pair) {
     print('$number is even! :D');
   } else {
-    print('$number is not even! :T'); 
+    print('$number is not even! :T');
   }
 }

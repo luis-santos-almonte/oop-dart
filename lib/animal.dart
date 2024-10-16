@@ -25,7 +25,7 @@ class Dog extends Animal {
 }
 
 class Dolphin extends Animal with Swimmer {
-  final int _size;
+  final double _size;
   final String _type;
 
   Dolphin(this._size, this._type)
@@ -33,7 +33,7 @@ class Dolphin extends Animal with Swimmer {
 
   @override
   void eat() {
-    print("The $_type dolphin is eating. It needs food to maintain it's $_size centimeters size.");
+    print("The $_type dolphin is eating. It needs food to maintain it's $_size meter size.");
   }
 
   void swim() {
