@@ -2,6 +2,7 @@ import 'dart:io';
 import "../lib/animal.dart";
 import "../lib/employee.dart";
 import "../lib/person.dart";
+import '../lib/vehicle.dart';
 
 enum weekDays { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
 
@@ -37,6 +38,16 @@ void dolphinMethod() {
   newDolphin.swim();
 }
 
+void vehicleMethod() {
+  Vehicle vehicle1 = Vehicle.crearVehiculo('auto');
+  Vehicle vehicle2 = Vehicle.crearVehiculo('moto');
+  Vehicle vehicle3 = Vehicle.crearVehiculo('camión');
+
+  print(vehicle1); 
+  print(vehicle2); 
+  print(vehicle3); 
+}
+
 void main() {
   int now = DateTime.now().weekday;
   weekDays today = weekDays.values[now - 1];
@@ -67,4 +78,7 @@ void main() {
   } else {
     print('$number is not even! :T');
   }
+
+  dolphinMethod();
+  vehicleMethod();
 }
