@@ -1,4 +1,4 @@
-import "../lib/person.dart";
+import "person.dart";
 
 class Employee extends Person {
   final String _job;
