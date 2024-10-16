@@ -3,10 +3,10 @@ class Vehicle {
 
   Vehicle._internal(this._type);
 
-  factory Vehicle.crearVehiculo(String tipo) {
+  factory Vehicle.createVehicle(String tipo) {
     return Vehicle._internal(tipo);
   }
 
   @override
-  String toString() => 'Este es un vehículo de tipo: $_type';
+  String toString() => 'This is vehicle type is  $_type';
 }

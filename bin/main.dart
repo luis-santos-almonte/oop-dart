@@ -39,13 +39,13 @@ void dolphinMethod() {
 }
 
 void vehicleMethod() {
-  Vehicle vehicle1 = Vehicle.crearVehiculo('auto');
-  Vehicle vehicle2 = Vehicle.crearVehiculo('moto');
-  Vehicle vehicle3 = Vehicle.crearVehiculo('camión');
+  Vehicle vehicle1 = Vehicle.createVehicle('car');
+  Vehicle vehicle2 = Vehicle.createVehicle('motorcycle');
+  Vehicle vehicle3 = Vehicle.createVehicle('truck');
 
-  print(vehicle1); 
-  print(vehicle2); 
-  print(vehicle3); 
+  print(vehicle1);
+  print(vehicle2);
+  print(vehicle3);
 }
 
 void main() {
