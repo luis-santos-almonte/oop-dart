@@ -1,6 +1,6 @@
 # Dart Console Application
 
-This is a simple Dart console application that demonstrates object-oriented programming concepts and user interaction through a menu-driven interface. The application includes functionalities related to various entities such as persons, employees, dolphins, and vehicles. Users can check if a number is even or odd, and the program runs continuously until the user decides to exit.
+This is a simple Dart console application that demonstrates object-oriented programming concepts and user interaction through a menu-driven interface. The application includes functionalities related to various entities such as persons, employees, animals, and vehicles. The program runs continuously until the user decides to exit.
 
 ## Features
 
