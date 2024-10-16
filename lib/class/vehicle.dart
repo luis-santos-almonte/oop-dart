@@ -3,8 +3,8 @@ class Vehicle {
 
   Vehicle._internal(this._type);
 
-  factory Vehicle.createVehicle(String tipo) {
-    return Vehicle._internal(tipo);
+  factory Vehicle.createVehicle(String type) {
+    return Vehicle._internal(type);
   }
 
   @override
