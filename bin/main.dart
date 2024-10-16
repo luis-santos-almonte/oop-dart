@@ -1,7 +1,12 @@
+import 'dart:io';
 import "../lib/employee.dart";
 import "../lib/person.dart";
 
 enum weekDays { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
+
+extension pairInts on int {
+  bool get pair => this % 2 == 0;
+}
 
 void personMethod() {
   String name = 'Luis';
@@ -23,6 +28,33 @@ void employeeMethod() {
 }
 
 void main() {
+  int now = DateTime.now().weekday;
+  weekDays today = weekDays.values[now - 1];
+  String? inputNumber;
+  int? number;
+
   personMethod();
   employeeMethod();
+  print(today.name);
+
+  print('Give me a number and I will return if it is even or odd: ');
+
+  do {
+    try {
+      print('value:');
+      inputNumber = stdin.readLineSync();
+      if (inputNumber == null || inputNumber.trim().isEmpty) {
+        throw Exception('The input cannot be empty.');
+      }
+      number = int.parse(inputNumber);
+    } catch (e) {
+      print('Please enter a valid number.');
+    }
+  } while (number == null);
+
+  if (number.pair) {
+    print('$number is even! :D');
+  } else {
+    print('$number is not even! :T'); 
+  }
 }
